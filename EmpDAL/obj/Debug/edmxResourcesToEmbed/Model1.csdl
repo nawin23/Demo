@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StepUpModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="AdminPsnumber" />
+    </Key>
+    <Property Name="AdminPsnumber" Type="Int32" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="ps_no" />
+    </Key>
+    <Property Name="ps_no" Type="Int32" Nullable="false" />
+    <Property Name="employee_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="current_skills" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="excepted_training" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="excepted_1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="excepted_2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="excepted_3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GEAUser">
+    <Key>
+      <PropertyRef Name="GEAPsNumber" />
+    </Key>
+    <Property Name="GEAPsNumber" Type="Int32" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LoginUser">
+    <Key>
+      <PropertyRef Name="PsNumber" />
+    </Key>
+    <Property Name="PsNumber" Type="Int32" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="StepUpContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Admins" EntityType="Self.Admin" />
+    <EntitySet Name="Employees" EntityType="Self.Employee" />
+    <EntitySet Name="GEAUsers" EntityType="Self.GEAUser" />
+    <EntitySet Name="LoginUsers" EntityType="Self.LoginUser" />
+    <FunctionImport Name="uspAddEmployee">
+      <Parameter Name="ps_no" Mode="In" Type="Int32" />
+      <Parameter Name="employee_name" Mode="In" Type="String" />
+      <Parameter Name="email_id" Mode="In" Type="String" />
+      <Parameter Name="current_skills" Mode="In" Type="String" />
+      <Parameter Name="expected_training" Mode="In" Type="String" />
+      <Parameter Name="expected_1" Mode="In" Type="String" />
+      <Parameter Name="expected_2" Mode="In" Type="String" />
+      <Parameter Name="expected_3" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StepUpModelStoreContainer" CdmEntityContainer="StepUpContext">
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="StepUpModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="AdminPsnumber" ColumnName="AdminPsnumber" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="StepUpModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="ps_no" ColumnName="ps_no" />
+          <ScalarProperty Name="employee_name" ColumnName="employee_name" />
+          <ScalarProperty Name="email_id" ColumnName="email_id" />
+          <ScalarProperty Name="current_skills" ColumnName="current_skills" />
+          <ScalarProperty Name="excepted_training" ColumnName="excepted_training" />
+          <ScalarProperty Name="excepted_1" ColumnName="excepted_1" />
+          <ScalarProperty Name="excepted_2" ColumnName="excepted_2" />
+          <ScalarProperty Name="excepted_3" ColumnName="excepted_3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GEAUsers">
+      <EntityTypeMapping TypeName="StepUpModel.GEAUser">
+        <MappingFragment StoreEntitySet="GEAUser">
+          <ScalarProperty Name="GEAPsNumber" ColumnName="GEAPsNumber" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoginUsers">
+      <EntityTypeMapping TypeName="StepUpModel.LoginUser">
+        <MappingFragment StoreEntitySet="LoginUser">
+          <ScalarProperty Name="PsNumber" ColumnName="PsNumber" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="uspAddEmployee" FunctionName="StepUpModel.Store.uspAddEmployee" />
+  </EntityContainerMapping>
+</Mapping>

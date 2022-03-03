@@ -1,0 +1,6 @@
+D:\Shadow proj\New\StepUp\EmpDTO\bin\Debug\EmpDTO.dll
+D:\Shadow proj\New\StepUp\EmpDTO\bin\Debug\EmpDTO.pdb
+D:\Shadow proj\New\StepUp\EmpDTO\obj\Debug\EmpDTO.csproj.AssemblyReference.cache
+D:\Shadow proj\New\StepUp\EmpDTO\obj\Debug\EmpDTO.csproj.CoreCompileInputs.cache
+D:\Shadow proj\New\StepUp\EmpDTO\obj\Debug\EmpDTO.dll
+D:\Shadow proj\New\StepUp\EmpDTO\obj\Debug\EmpDTO.pdb

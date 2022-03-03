@@ -1,0 +1,14 @@
+D:\Shadow proj\New\StepUp\EmpDAL\bin\Debug\EmpDAL.dll.config
+D:\Shadow proj\New\StepUp\EmpDAL\bin\Debug\EmpDAL.dll
+D:\Shadow proj\New\StepUp\EmpDAL\bin\Debug\EmpDAL.pdb
+D:\Shadow proj\New\StepUp\EmpDAL\bin\Debug\EmpDTO.dll
+D:\Shadow proj\New\StepUp\EmpDAL\bin\Debug\EntityFramework.dll
+D:\Shadow proj\New\StepUp\EmpDAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Shadow proj\New\StepUp\EmpDAL\bin\Debug\EmpDTO.pdb
+D:\Shadow proj\New\StepUp\EmpDAL\bin\Debug\EntityFramework.xml
+D:\Shadow proj\New\StepUp\EmpDAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Shadow proj\New\StepUp\EmpDAL\obj\Debug\EmpDAL.csproj.AssemblyReference.cache
+D:\Shadow proj\New\StepUp\EmpDAL\obj\Debug\EmpDAL.csproj.CoreCompileInputs.cache
+D:\Shadow proj\New\StepUp\EmpDAL\obj\Debug\EmpDAL.csproj.CopyComplete
+D:\Shadow proj\New\StepUp\EmpDAL\obj\Debug\EmpDAL.dll
+D:\Shadow proj\New\StepUp\EmpDAL\obj\Debug\EmpDAL.pdb

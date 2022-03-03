@@ -1,0 +1,76 @@
+﻿@model IEnumerable<EmpMVC.Models.EmpFetchMVC>
+
+@{
+    ViewBag.Title = "Employee Details";
+}
+
+<h2>Fetch</h2>
+
+<p>
+    @Html.ActionLink("Create New", "SaveEmp")
+    @Html.ActionLink("Login", "SaveLogin")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Ps_Number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Employee_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Current_skill)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Expected_Training)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Expected_Training1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Expected_Training2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Expected_Training3)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ps_Number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Employee_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Current_skill)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Expected_Training)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Expected_Training1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Expected_Training2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Expected_Training3)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>
